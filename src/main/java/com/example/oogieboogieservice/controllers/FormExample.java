@@ -15,7 +15,7 @@ public class FormExample
 
         ArrayList<Event> eventList = new ArrayList<>();
 
-        @GetMapping("/") // @GetMapping tager imod en getrequest fra browseren.
+        @GetMapping("/index") // @GetMapping tager imod en getrequest fra browseren.
         public String index()
         {
             return "index"; // index er den html fil der returneres.
