@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet/main.css">
+    <title>Forms12sem</title>
+</head>
+
+<body id="Events">
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index">Home</a>
+                <a href="Form">Create new post</a>
+                <a href="succes">Your Event</a>
+                <a href="dashboard">Dashboard</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<hr>
+
+
+<h1>Jesper og Roberts OogieBoogie Service</h1>
+<img src="img/MiniBoogie.jpg"/>
+<br><br>
+
+<form action="/submitform" method="post" id="submitform" oninput="ghosts.value=parseInt(a.value)+parseInt(b.value)" name="submitform">
+    <!-- names -->
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br><br>
+    <!-- emaels -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+    <!-- event name -->
+    <label for="einfo">Event Name:</label><br>
+    <input type="text" id="einfo" name="einfo"><br><br>
+    <!-- date -->
+    <label for="Date">Date of event:</label><br>
+    <input type="date" id="date" name="date"><br><br>
+    <!-- Ghosts -->
+    <label for="b">Number of ghosts:</label>
+    <input type="range" id="a" value="50">
+    +<input type="number" id="b" value="1">
+    =<output name="ghosts" for="a">Ghosts</output><br><br>
+    <!-- Event Description -->
+    <label>Event Description</label><br>
+    <!-- text and button -->
+    <textarea id="eventinput" name="eventinput" rows="10" cols="70"></textarea><br>
+    <button type="submit">Submit</button>
+</form>
+
+
+<hr>
+<footer>
+    <nav>
+        <ul>
+            <li>
+                <a href="index">Home</a>
+                <a href="Form">Create new post</a>
+                <a href="succes">Your Event</a>
+                <a href="dashboard">Dashboard</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+</html>

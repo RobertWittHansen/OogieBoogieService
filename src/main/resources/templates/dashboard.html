@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet/main.css">
+    <title>dashboard</title>
+</head>
+
+<body id="dashboard">
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index">Home</a>
+                <a href="Form">Create new post</a>
+                <a href="succes">Your Event</a>
+                <a href="dashboard">Dashboard</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<hr>
+
+
+<h1>Jesper og Roberts OogieBoogie Service</h1>
+<img src="img/MiniBoogie.jpg"/>
+<br><br>
+
+<h2>Your dashboard</h2>
+<div th:each="event : ${events}">
+    <p th:text="${event.getEventinput()}"></p>
+    <p th:text="${event.getFname()}"></p>
+    <p th:text="${event.getLname()}"></p>
+    <p th:text="${event.getDate()}"></p>
+    <p th:text="${event.getEinfo()}"></p>
+</div>
+
+
+<hr>
+<footer>
+    <nav>
+        <ul>
+            <li>
+                <a href="index">Home</a>
+                <a href="Form">Create new post</a>
+                <a href="succes">Your Event</a>
+                <a href="dashboard">Dashboard</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>

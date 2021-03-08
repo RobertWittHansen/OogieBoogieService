@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet/main.css">
+    <title>succes</title>
+</head>
+
+<body id="succes">
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index">Home</a>
+                <a href="Form">Create new post</a>
+                <a href="succes">Your Event</a>
+                <a href="dashboard">Dashboard</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<hr>
+
+
+<h1>Jesper og Roberts OogieBoogie Service</h1>
+<img src="img/MiniBoogie.jpg"/>
+<br><br>
+
+<h1>Succes.! Your event is registeret.</h1>
+<h3>Below you can see what you posted:</h3>
+
+<p th:text="${'Your comment: ' + event.getEventinput()}"></p>
+<p th:text="${'First name: ' + event.getFname()}"></p>
+<p th:text="${'Last name: ' + event.getLname()}"></p>
+<p th:text="${'Event date: ' + event.getDate()}"></p>
+<p th:text="${'Event name: ' + event.getEinfo()}"></p>
+
+
+<hr>
+<footer>
+    <nav>
+        <ul>
+            <li>
+                <a href="index">Home</a>
+                <a href="Form">Create new post</a>
+                <a href="succes">Your Event</a>
+                <a href="dashboard">Dashboard</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+</html>
